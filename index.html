@@ -12,33 +12,34 @@
     <script defer src="bootstrap/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
     <body>
-        <div class="container mb-2">
+        <div class="container mb-3">
 
             <header class="row position-fixed bg-light px-4" style="z-index: 1; left: 0; right: 0;">
-                <h1 class="col-md-5">Philipp Glaw</h1>
-                <div class="col-md"> <!-- Navbar -->
-                    <!-- <ul class="nav bg-light rounded mb-2"> -->
-                    <ul class="nav rounded mb-2">
-                        <li class="nav-item">
-                            <a href="#profile" class="nav-link" style="text-decoration: underline;">Biografie</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#businesscard" class="nav-link" style="text-decoration: underline;">Business card</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#platforms" class="nav-link" style="text-decoration: underline;">Platforms</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#textblock" class="nav-link" style="text-decoration: underline;">Textblock</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#cv" class="nav-link" style="text-decoration: underline;">CV</a>
-                        </li>
-                    </ul>
+                <div class="row container mx-auto pl-3 pl-md-3 pr-md-0">
+                    <h1 class="col-md-5 pl-0">Philipp Glaw</h1>
+                    <div class="col-md d-flex justify-content-md-end pl-0 pr-md-0"> <!-- Navbar -->
+                        <ul class="nav mb-2">
+                            <li class="nav-item">
+                                <a href="#profile" class="nav-link pl-0 pl-md-3" style="text-decoration: underline;">Biografie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#businesscard" class="nav-link pl-0 pl-md-3" style="text-decoration: underline;">Business card</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#platforms" class="nav-link pl-0 pl-md-3" style="text-decoration: underline;">Platforms</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#textblock" class="nav-link pl-0 pl-md-3" style="text-decoration: underline;">Textblock</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#cv" class="nav-link pl-0 pl-md-3" style="text-decoration: underline;">CV</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </header>
 
-            <div class="row" id="profile" style="padding-top: 100px;"> <!--Profile infos -->
+            <div class="row" id="profile" style="padding-top: 9rem;"> <!--Profile infos -->
                 <div class="col-md-5"> <!--Profile picture -->
                     <img src="images/profile2.png" class="img-fluid" alt="">
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
@@ -162,9 +163,12 @@
                     </div>
                 </div>
             </div>
-            <div> <!-- copyright -->
-                <p>&copy; Philipp Glaw</p>
-            </div>
+
+            <footer class="row position-fixed w-100 m-0 bg-dark text-light text-center" style="bottom: 0; left: 0; right: 0;">
+                <div class="w-100">
+                    <p class="m-0">&copy; Philipp Glaw</p>
+                </div> <!-- copyright -->
+            </footer>
 
         </div>
     </body>
