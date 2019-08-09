@@ -12,12 +12,13 @@
     <script defer src="bootstrap/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
     <body>
-        <div class="container my-2">
+        <div class="container mb-2">
 
-            <header class="row">
+            <header class="row position-fixed bg-light px-4" style="z-index: 1; left: 0; right: 0;">
                 <h1 class="col-md-5">Philipp Glaw</h1>
-                <div class="col-md-4"> <!-- Navbar -->
-                    <ul class="nav bg-light rounded mb-2">
+                <div class="col-md"> <!-- Navbar -->
+                    <!-- <ul class="nav bg-light rounded mb-2"> -->
+                    <ul class="nav rounded mb-2">
                         <li class="nav-item">
                             <a href="#profile" class="nav-link" style="text-decoration: underline;">Biografie</a>
                         </li>
@@ -37,12 +38,12 @@
                 </div>
             </header>
 
-            <div class="row" id="profile"> <!--Profile infos -->
-                <div class="col-md-3"> <!--Profile picture -->
-                    <img src="images/profile.png" class="img-fluid" alt="">
+            <div class="row" id="profile" style="padding-top: 100px;"> <!--Profile infos -->
+                <div class="col-md-5"> <!--Profile picture -->
+                    <img src="images/profile2.png" class="img-fluid" alt="">
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
                 </div>
-                <div class="col-md-9">
+                <div class="col-md">
                     <div>  <!--What can i, beside of nothing...? -->
                         <h3 class="h5">Neuefische learning:</h2>
                         <div>
@@ -53,7 +54,7 @@
                         </div>
                     </div>
                     <div>  <!--What can i, beside of nothing...? PART 2 -->
-                        <h3 class="h5">Bksanwofoamw:</h2>
+                        <h3 class="h5">Hobbies:</h2>
                         <div>
                             <p class="badge badge-primary text-wrap">Playing Guitar</p>
                             <p class="badge badge-primary text-wrap">Coding</p>
@@ -64,89 +65,103 @@
                 </div>
             </div>
 
-            <div class="card mb-3" id="businesscard"> <!-- business card -->
-                <div class="card-body">
-                    <h3 class="card-title h5">Phone number:</h3>
-                    <a class="card-text" href="tel:123/44567890">123/44567890</a>
-                </div>
-                <div class="card-body">
-                    <h3 class="card-title h5">E-Mail:</h3>
-                    <a class="card-text" href="mailto:blabla@blublub.com">blabla@blublub.com</a>
-                </div>
-            </div>
-
-            <div class="mb-3" id="platforms"> <!-- platforms -->
-                <div class="card mb-2"> <!-- github -->
-                    <a href="https://github.com/pgmystery">
-                        <img class="card-img-top border" src="images/github.jpg" alt="github">
-                        <a class="my-2 ml-2 h3" href="https://github.com/pgmystery">GitHub</a>
-                    </a>
-                </div>
-                <div class="card mb-2"> <!-- codecademy -->
-                    <a href="https://github.com/pgmystery">
-                        <img class="card-img-top border" src="images/codecademy.png" alt="codecademy">
-                        <a class="my-2 ml-2 h3" href="">Codecademy</a>
-                    </a>
-                </div>
-                <div class="card mb-2"> <!--  -->
-                    <a href="https://github.com/pgmystery">
-                        <img class="card-img-top border" src="images/codepen-logo.png" alt="codepen">
-                        <a class="my-2 ml-2 h3" href="">Codepen</a>
-                    </a>
+            <div class="mb-3 card" id="businesscard"> <!-- business card -->
+                <div class="card-body row">
+                    <div class="col-md mb-4 mb-md-0">
+                        <h3 class="card-title h5">Phone number:</h3>
+                        <a class="card-text" href="tel:123/44567890">123/44567890</a>
+                    </div>
+                    <div class="col-md">
+                        <h3 class="card-title h5">E-Mail:</h3>
+                        <a class="card-text" href="mailto:blabla@blublub.com">blabla@blublub.com</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="mb-3" id="textblock">  <!-- Text-Block? -->
-                <h2 class="mb-2">Lorem ipsum dolor</h2>
-                <p class="text-justify">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <div class="mb-3 row" id="platforms"> <!-- platforms -->
+                <div class="mb-2 col-md">
+                    <div class="card"> <!-- github -->
+                        <a href="https://github.com/pgmystery">
+                            <!-- <img class="card-img-top border" src="images/github.jpg" alt="github" style="max-height: 105px;"> -->
+                            <img class="card-img-top border" src="images/github2.png" alt="github">
+                            <a class="my-2 ml-2 h3" href="https://github.com/pgmystery">GitHub</a>
+                        </a>
+                    </div>
+                </div>
+                <div class="mb-2 col-md">
+                    <div class="card"> <!-- codecademy -->
+                        <a href="https://github.com/pgmystery">
+                            <img class="card-img-top border" src="images/codecademy.png" alt="codecademy">
+                            <a class="my-2 ml-2 h3" href="">Codecademy</a>
+                        </a>
+                    </div>
+                </div>
+                <div class="mb-2 col-md">
+                    <div class="card"> <!--  -->
+                        <a href="https://github.com/pgmystery">
+                            <img class="card-img-top border" src="images/codepen-logo.png" alt="codepen">
+                            <a class="my-2 ml-2 h3" href="">Codepen</a>
+                        </a>
+                    </div>
+                </div>
             </div>
 
-            <div class="mb-3" id="cv">  <!-- curriculum vitae -->
-                <h2>Lebenslauf</h2>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Year</th>
-                            <th scope="col">Doing</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                2019
-                            </td>
-                            <td>
-                                neuefische
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                2018
-                            </td>
-                            <td>
-                                FISI
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                2015-2018
-                            </td>
-                            <td>
-                                Ausbildung FISI
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                &lt;2015
-                            </td>
-                            <td>
-                                Stuff
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <div class="row">
+                <div class="col-md">
+                    <div class="mb-3" id="textblock">  <!-- Text-Block? -->
+                        <h2 class="mb-2">Lorem ipsum dolor</h2>
+                        <p class="text-justify">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
 
+                <div class="col-md">
+                    <div class="mb-3" id="cv">  <!-- curriculum vitae -->
+                        <h2>Lebenslauf</h2>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Year</th>
+                                    <th scope="col">Doing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        2019
+                                    </td>
+                                    <td>
+                                        neuefische
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        2018
+                                    </td>
+                                    <td>
+                                        FISI
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        2015-2018
+                                    </td>
+                                    <td>
+                                        Ausbildung FISI
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &lt;2015
+                                    </td>
+                                    <td>
+                                        Stuff
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
             <div> <!-- copyright -->
                 <p>&copy; Philipp Glaw</p>
             </div>
